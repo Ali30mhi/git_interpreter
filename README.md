@@ -1,2 +1,2 @@
 # git_interpreter
-A translator for Force language, which also uses Git 
+A translator for Forth language, which also uses Git 
