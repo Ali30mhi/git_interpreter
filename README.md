@@ -16,18 +16,18 @@ void git_commit() {
     // Initialize a new Git repository
     system("git init");
 
-    // Clone a Git repository
-    system("git clone https://github.com/username/repository.git");
-
     // Add all files to the staging area
     system("git add .");
 
     // Commit changes with a message
-    system("git commit -m 'your commit message'");
+    system("initial your commit message");
+    
 
     // Push changes to the remote repository
     system("git push origin master");
+
 }
+
 
 int global_mode=0;
 
