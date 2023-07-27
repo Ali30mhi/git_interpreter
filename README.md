@@ -60,24 +60,6 @@ Stack overflow
 
 
 
-$ forth hello.f
-Hello, world!
-To use the Forth compiler, run the forthc command followed by the name of your Forth source code file. This will generate an executable file with the same name as your source code file. For example:
-
-$ forthc hello.f
-$ ./hello
-Hello, world!
-
-Contributing
-Contributions to this project are welcome! To contribute, please follow these guidelines:
-
-Fork the repository and create a new branch for your feature or bugfix.
-Make your changes and ensure that all tests pass.
-Submit a pull request with a clear description of your changes.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Credits
 
 
 
