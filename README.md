@@ -1,66 +1,28 @@
-introduction 
+# Forth Language
 
-Forth Language
-Forth is a stack-based programming language known for its simplicity and efficiency. This project is a Forth language interpreter and compiler, written in C.
+A small stack-based Forth interpreter, written in C.
 
-Setup
-First you have to make sure you have git, gcc and make install on your machine then you can clone this project:
+## Files
 
-git clone https://github.com/alimoghaddam2000/Forth
-after cloning you must install sdl2 and ncurses. if you are in ubuntu22 you have to run following command otherwise you should lookup how to install libsdl2 on your specific OS in google.
+- `forth.c` — the current, actively maintained interpreter. A clean rewrite of the original with a polished terminal REPL: colored output, a live stack display after every command, help/words commands, and safe error handling.
+- `forth language` — the original prototype. Kept as-is for history; superseded by forth.c.
+- `example.fs` — a short demo script. Run it with ./forth < example.fs
 
-Features
-This interpreter supports following key word:
-do, loop, +loop, begin, until, i, i', j
-+, * , /, %, mod
-if, else, then, =, <, >, and, or, invert
-variable, constant, allot, @
-dup, drop, swap, over, rot,
-key, last-key - emit, cr, ."
-Sleep, random - (, )
+## Build & run
 
-These are possible Errors:
-Stack underflow
-Stack overflow
+gcc -Wall -Wextra -std=c11 -o forth forth.c
+./forth
 
+No external dependencies.
 
+## Implemented
 
++ - * / mod /mod = < > and or invert dup drop swap over rot . .s emit cr empty? reset, single-level if/else/then, negative numbers, backslash comments.
 
+## Not yet implemented
 
+Word definitions (: name ... ;), loops, variable/constant, string printing. Recognized but intentionally left unimplemented rather than faked.
 
+## License
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+GPL-3.0 — see LICENSE.
